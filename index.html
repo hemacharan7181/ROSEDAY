@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Rose Day ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card" id="screen1">
+  <h1>Happy Rose Day Baby</h1>
+  <img src="baby.png" class="icon">
+  <p>A rose for the person who makes my world more beautiful just by being in it 🌹</p>
+  <button onclick="goTo(2)">Open Memories</button>
+</div>
+
+<div class="card hidden" id="screen2">
+  <h1>Our Love Moments</h1>
+  <div class="gallery">
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.jpg">
+  </div>
+  <button onclick="goTo(3)">Pick a Gift</button>
+</div>
+
+<div class="card hidden" id="screen3">
+  <h1>Pick a Rose</h1>
+  <p>One of these roses holds a secret message…</p>
+  <div class="roses">
+    <img src="rose.png" onclick="wrongRose()">
+    <img src="rose.png" onclick="rightRose()">
+    <img src="rose.png" onclick="wrongRose()">
+  </div>
+  <p id="roseMsg"></p>
+</div>
+
+<div class="card hidden" id="screen4">
+  <h1>From My Heart</h1>
+  <div class="letter">
+    <p>
+      My Dearest,<br><br>
+      Just like a rose, your love fills my life with fragrance and color.
+      On this special day, I want you to know you are my most precious treasure.<br><br>
+      I promise to keep our love blooming forever.<br><br>
+      Always Yours ❤️
+    </p>
+  </div>
+  <button onclick="goTo(5)">One Final Note</button>
+</div>
+
+<div class="card hidden" id="screen5">
+  <h1>I Love You</h1>
+  <img src="cat.png" class="icon">
+  <p>
+    Thank you for being my constant bloom.<br>
+    Wishing you a day as beautiful as your smile.
+  </p>
+  <button onclick="goTo(1)">Happy Rose Day Once Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
